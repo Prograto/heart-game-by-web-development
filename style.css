@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background: url("./images/gamebg.png") no-repeat center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 383px;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+}
+
+.section1 img {
+    margin: 0;
+    position: relative;
+    width: 390px;
+    height: 100%;
+}
+
+.game-into {
+    position: absolute;
+    margin: 0;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: large;
+    letter-spacing: 2px;
+    top: 5%;
+    left: 10%;
+    text-align: center;
+    color: rgba(130, 138, 230, 0.756);  
+}
+
+.gameimg img {
+    position: absolute;
+    width: 392px;
+    top: 16%;
+    height: 500px;
+    left: 0;
+}
+
+.play {
+    position: absolute;
+    top: 83%;
+    right: 35%;  
+    width: 110px;
+    height: 50px;
+}
+
+.play button {
+    border: 2px solid rgb(22, 80, 157);
+    background-color: aqua;
+    border-radius: 20px;
+    width: 110px;
+    height: 50px; 
+    opacity: 1;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 800;
+    font-size: large;
+    letter-spacing: 2px;
+}
+
+.play button:hover {
+    opacity: 0.3;
+    filter: brightness(130%);
+    transition: opacity filter 0.5s ease;
+}
+
+.section2 {
+    position: relative;
+    z-index: -1;
+    opacity: 1;
+    left: -10px;
+    right: 0;
+    width: 380px;
+    height: 700px;
+    padding: 0;
+    font-family: "Press Start 2P", system-ui;
+    color: rgba(60, 0, 255, 0.756);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section2 h1{
+    position: absolute;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 800;
+    width: 100%;
+    font-size: 12px; 
+    padding: 5px;
+    background-color: #f4f4d561;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgba(60, 0, 255, 0.756);
+    top: 5%;
+    left: 0;
+    justify-content: space-around;
+}
+.form {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 10%;
+    left: 0;
+}
+
+.form p {
+    font-size: small;
+    color: brown;
+}
+
+.label {
+    padding: 5px;
+}
+.input{
+    padding: 15px;
+    font-size: 7px;
+    color: black;
+    background-color: #d463eb61;
+    border-radius: 20px;
+}
+.section2 button {
+    position: absolute;
+    bottom: -20%;
+    border: 2px solid rgb(22, 80, 157);
+    background-color: aqua;
+    border-radius: 20px;
+    width: 110px;
+    height: 50px; 
+    opacity: 1;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.section2 button:hover {
+    opacity: 0.3;
+    filter: brightness(130%);
+    transition: opacity filter 0.5s ease;
+}
+.section1, .section2 {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+}
+
+.section1 {
+    background-image: url("./images/mainbg.png");
+}
+
+.section2 {
+    background-image: url("./images/broke.jpg");
+}
+
+.gameimg img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+@media only screen and (max-device-width: 1080px) {
+    .section1,.section2{
+        width: 100%;
+        text-align: center;
+    }
+    .game-into{
+        text-align: center;
+        font-size: 70px;
+    }
+    .gameimg img{
+        width: 90%;
+        height: 70vh;
+    }
+    .play{
+        width: 100%;
+        left: 0%;
+        z-index: 4;
+    }
+}
+

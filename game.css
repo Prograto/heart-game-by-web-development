@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.section3 {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    right: 0;
+    width: 380px;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    font-family: "Press Start 2P", system-ui;
+    color: rgba(60, 0, 255, 0.756);
+}
+
+#crushImage {
+    margin: 0;
+    position: absolute;
+    width: 380px;
+    height: 100%;
+    z-index: -1;
+}
+
+#assertImage {
+    position: absolute;
+    width: 15%;
+    bottom: 0;
+}
+
+.heart {
+    position: absolute;
+    width: 20%;
+}
+
+.game-over-text {
+    position: absolute;
+    color: rgb(250, 6, 6);
+    bottom: 30%;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 700;
+    font-size: 120%;
+    transform: scale(1.3);
+    transition: transform 0.5s ease;
+    z-index: 2;
+}
+
+.game-won-text {
+    position: absolute;
+    color: rgb(250, 6, 6);
+    bottom: 20%;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 700;
+    font-size: 120%;
+    transform: scale(1.15);
+    transition: transform 0.5s ease;
+    z-index: 2;
+}
+
+.score-display {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 120%;
+    z-index: 2;
+}
+
+.score-display span {
+    font-size: 140%;
+    color: red;
+}
+
+.new-game {
+    position: absolute;
+    text-align: center;
+    margin-left: 50%;
+    width: 50%;
+    padding: 5%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%; 
+    transform: translateX(-50%); 
+}
+
+.exit-game {
+    position: absolute;
+    text-align: center;
+    margin-left: 50%;
+    width: 40%;
+    padding: 5%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 75%;
+    transform: translateX(-50%);
+}
+
+button {
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 1;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 800;
+    font-size: large;
+    letter-spacing: 2px;
+    background-color: rgba(137, 43, 226, 0.358);
+    color: rgba(241, 0, 0, 0.849);
+}
+
+button:hover {
+    opacity: 0.3;
+    filter: brightness(130%);
+    transition: opacity filter 0.5s ease;
+}
+
+@media only screen and (max-device-width: 1080px) {
+    .section3 {
+        width: 100%;
+        right: 0;
+    }
+
+    #crushImage {
+        width: 100%;
+        right: 0;
+    }
+
+    #assertImage {
+        bottom: 10%;
+    }
+
+    .game-over-text {
+        bottom: 40%;
+    }
+
+    .game-won-text {
+        bottom: 40%;
+    }
+
+    .new-game {
+        margin-top: 75%;
+    }
+
+    .exit-game {
+        margin-top: 60%;
+    }
+}
